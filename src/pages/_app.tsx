@@ -2,15 +2,18 @@
 import GlobalStyle from '@/styles/GlobalStyles'
 import type { AppProps } from 'next/app'
 
+import { ThemeProvider } from 'context/theme-context'
 import Layout from '@/components/Layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider defaultTheme="light">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   )
 }

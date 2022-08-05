@@ -9,14 +9,14 @@ const ToggleButton = styled.button`
   border-radius: 5px;
 `
 
-export default function ToggleTheme() {
+export default function ToggleColorMode() {
   const [mode, setMode] = useState('light')
 
   const handleClick = () => {
     const newMode = mode === 'light' ? 'dark' : 'light'
     setMode(newMode)
 
-    // update meta
+    // update color-scheme
     const meta: any = document.querySelector('meta[name=color-scheme]')
     if (meta) {
       meta.content = newMode === 'dark' ? 'dark light' : 'light dark'

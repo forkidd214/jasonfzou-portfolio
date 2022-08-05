@@ -1,13 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-// import Image from 'next/image'
 
 const IndexPage: NextPage = () => (
   <>
     <Head>
       <title>Create Next App</title>
     </Head>
-
     <main>
       <h1>Index Page</h1>
       <p>
