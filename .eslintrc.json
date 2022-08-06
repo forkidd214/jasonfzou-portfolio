@@ -20,7 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "testing-library"],
+  "plugins": ["react", "@typescript-eslint", "testing-library", "cypress"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -51,15 +51,6 @@
         "react/function-component-definition": "off",
         "react/jsx-filename-extension": "off",
         "react/require-default-props": "off",
-        // "no-use-before-define": [
-        //   "error",
-        //   {
-        //     "functions": false,
-        //     "classes": true,
-        //     "variables": true,
-        //     "allowNamedExports": false
-        //   }
-        // ]
         "@typescript-eslint/no-use-before-define": "off"
       }
     },
@@ -76,6 +67,11 @@
         "testing-library/no-debugging-utils": "warn",
         "testing-library/no-dom-import": "off"
       }
+    },
+    // Only uses eslint-plugin-cypress lint rules in cypress files
+    {
+      "files": ["**/cypress/**/*.[jt]s?(x)"],
+      "extends": ["plugin:cypress/recommended"]
     }
   ]
 }
