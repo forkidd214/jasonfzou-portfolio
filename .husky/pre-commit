@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/common.sh"
 
-npx lint-staged
+# Temporarily disable lint-staged’s own console output
+#   - See https://github.com/typicode/husky/issues/968
+#   - ...or https://github.com/okonet/lint-staged/issues/1164
+npx lint-staged --quiet
+
