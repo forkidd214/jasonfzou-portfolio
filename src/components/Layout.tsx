@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import ToggleTheme from 'components/ToggleTheme'
-import favicon from '../../public/favicon.ico'
 import styled from 'styled-components'
+import favicon from '../../public/favicon.ico'
 
 const RootContainer = styled.div`
   min-height: 100vh;
