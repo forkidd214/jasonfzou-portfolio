@@ -15,10 +15,10 @@ const customJestConfig = {
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleNameMapper: {
     // Handle module aliases (this will be automatically configured for you soon)
-    '^@/pages/(.*)$': '<rootDir>/src/pages/$1',
-    '^@/components/(.*)$': '<rootDir>/src/components/$1',
-    '^@/context/(.*)$': '<rootDir>/src/context/$1',
-    '^@/styles/(.*)$': '<rootDir>/src/styles/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@contexts/(.*)$': '<rootDir>/src/contexts/$1',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
   },
   testEnvironment: 'jest-environment-jsdom',
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Head from 'next/head'
-import ToggleThemeTester from '@/components/ToggleThemeTester'
+import ToggleTheme from '@components/toggle-theme'
 import favicon from '../../public/favicon.ico'
 
 const RootContainer = styled.div`
@@ -28,7 +28,7 @@ export default function Layout({ children }: LayoutProps) {
       </Head>
       <RootContainer id="#root">
         <nav>Navbar</nav>
-        <ToggleThemeTester />
+        <ToggleTheme />
         <main>{children}</main>
         <footer>Footer</footer>
       </RootContainer>
