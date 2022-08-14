@@ -2,9 +2,11 @@ import styled from 'styled-components'
 import * as React from 'react'
 import { useTheme } from '@contexts/theme-context'
 import type { ThemeOption } from '@contexts/theme-context'
+import { cssVars } from '@components/styles'
 
 interface WrapperProps {
   readonly system: boolean
+  readonly dark: boolean
 }
 
 const Wrapper = styled.div<WrapperProps>`
@@ -25,6 +27,7 @@ const Wrapper = styled.div<WrapperProps>`
   }
 
   & > select {
+    background-color: ${(props) => props.dark && cssVars.color.background};
     position: relative;
     padding: 0.5rem;
     border: 1px solid;
@@ -38,7 +41,7 @@ export default function ToggleTheme() {
   const isSystem = theme === 'system'
 
   return (
-    <Wrapper system={isSystem}>
+    <Wrapper system={isSystem} dark={resolvedTheme === 'dark'}>
       {theme ? (
         <>
           <label htmlFor="theme-select">

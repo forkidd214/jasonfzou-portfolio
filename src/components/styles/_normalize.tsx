@@ -2,7 +2,8 @@ import { css } from 'styled-components'
 
 // prettier-ignore
 const normalize = css`
-  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -29,7 +30,7 @@ body {
 }
 
 /**
- * Render the main element consistently in IE.
+ * Render the 'main' element consistently in IE.
  */
 
 main {
@@ -37,8 +38,8 @@ main {
 }
 
 /**
- * Correct the font size and margin on h1 elements within section and
- * article contexts in Chrome, Firefox, and Safari.
+ * Correct the font size and margin on 'h1' elements within 'section' and
+ * 'article' contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
@@ -62,7 +63,7 @@ hr {
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd em font sizing in all browsers.
+ * 2. Correct the odd 'em' font sizing in all browsers.
  */
 
 pre {
@@ -103,7 +104,7 @@ strong {
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd em font sizing in all browsers.
+ * 2. Correct the odd 'em' font sizing in all browsers.
  */
 
 code,
@@ -122,7 +123,7 @@ small {
 }
 
 /**
- * Prevent sub and sup elements from affecting the line height in
+ * Prevent 'sub' and 'sup' elements from affecting the line height in
  * all browsers.
  */
 
@@ -178,8 +179,7 @@ textarea {
  */
 
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -189,8 +189,7 @@ input {
  */
 
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -199,9 +198,9 @@ select {
  */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -210,9 +209,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -222,9 +221,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -238,9 +237,9 @@ fieldset {
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from fieldset elements in IE.
+ * 2. Correct the color inheritance from 'fieldset' elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
- *    fieldset elements in all browsers.
+ *    'fieldset' elements in all browsers.
  */
 
 legend {
@@ -273,8 +272,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -283,8 +282,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -293,7 +292,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -302,13 +301,13 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type='search']::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to inherit in Safari.
+ * 2. Change font properties to 'inherit' in Safari.
  */
 
 ::-webkit-file-upload-button {
